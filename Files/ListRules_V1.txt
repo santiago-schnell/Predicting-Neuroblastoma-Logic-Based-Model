@@ -1,0 +1,26 @@
+ALK = MDK = TrkA = NGF = TrkB = BDNF = Differentiation = Apoptosis = Proliferation = Angiogenesis = True
+p53 = AKT = FoxO = Ras = MYCN = p27 = True
+
+#6-gene input signature
+TrkB* = TrkB
+BDNF* = BDNF
+TrkA* = not MYCN
+NGF* = NGF
+MDK* = MDK
+ALK* = ALK
+
+Ras* = NGF and TrkA
+AKT* = ((MDK and ALK) or (BDNF and TrkB))
+MYCN* = (AKT or Ras) and not TrkA
+FoxO* = not AKT
+p27* = FoxO or not MYCN
+p53* = p53
+# IP3* = BDNF and TrkB
+
+#Model outcome states
+Differentiation* = (MDK and ALK) or Ras
+Apoptosis* = (p53 and not AKT) or (TrkA and not NGF)
+Angiogenesis* = AKT
+Proliferation* = (BDNF and TrkB) or (not p27 and not p53)
+
+

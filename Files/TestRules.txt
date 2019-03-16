@@ -1,0 +1,9 @@
+A = B = C = Apoptosis = Proliferation = Angiogenesis = Differentiation = True
+
+A* = B or C
+B* = not A and not C
+C* = Apoptosis or not A
+Apoptosis* = A and C
+Proliferation* = (not B and not C) or A
+Angiogenesis* = A and B and C
+Differentiation* = B

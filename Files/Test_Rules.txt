@@ -1,0 +1,10 @@
+Angiogenesis = Apoptosis = Proliferation = D = E = Differentiation = True
+
+Angiogenesis* = not Angiogenesis
+Apoptosis* = Angiogenesis
+Proliferation* = not Apoptosis
+D* = not Angiogenesis or Apoptosis
+E* = Proliferation and not Differentiation
+Differentiation* = not Proliferation
+
+

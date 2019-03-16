@@ -1,0 +1,26 @@
+The fingerprint is [1048293, 841774, 314824, 314825, 314826, 314823, 314824, 314825, 314826, 314823, 314824]
+The cycle length is 4
+100.00% done.
+
+
+Traceback (most recent call last):
+  File "C:/Users/Admin/PycharmProjects/Kiddos/GitBool/Files/Code for Analysis.py", line 5, in <module>
+    wf.all_ss_model_w_fix('GalleyRulesRemoved.txt', 'sync', 20, 'GalleyRulesRemoved_TRKBON_DL.csv', geneon=['TrkB'])
+  File "C:\Users\Admin\PycharmProjects\Kiddos\GitBool\Files\Will_FunctsDL_With_Dump.py", line 246, in all_ss_model_w_fix
+    # append the model fingerprint for the entirety of the simulation
+  File "C:\Users\Admin\PycharmProjects\Boolean\venv\lib\site-packages\pandas\io\parsers.py", line 709, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Admin\PycharmProjects\Boolean\venv\lib\site-packages\pandas\io\parsers.py", line 455, in _read
+    data = parser.read(nrows)
+  File "C:\Users\Admin\PycharmProjects\Boolean\venv\lib\site-packages\pandas\io\parsers.py", line 1069, in read
+    ret = self._engine.read(nrows)
+  File "C:\Users\Admin\PycharmProjects\Boolean\venv\lib\site-packages\pandas\io\parsers.py", line 1839, in read
+    data = self._reader.read(nrows)
+  File "pandas\_libs\parsers.pyx", line 902, in pandas._libs.parsers.TextReader.read
+  File "pandas\_libs\parsers.pyx", line 924, in pandas._libs.parsers.TextReader._read_low_memory
+  File "pandas\_libs\parsers.pyx", line 978, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas\_libs\parsers.pyx", line 965, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas\_libs\parsers.pyx", line 2208, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: out of memory
+
+Process finished with exit code 1

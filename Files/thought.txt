@@ -1,0 +1,21 @@
+D1 = D2 = D3 = True
+repair = apoptosis = robust = True
+
+D1* = D1
+D2* = D2
+D3* = D3
+
+repair* = (D1 and (not D3 and not D2)) or ((D2 and robust) and (not D3 and not D1)) or ((D2 and robust) and not D3)
+robust* = robust
+apoptosis* = D3 or (D2 and not robust)
+
+
+#D1 = D1 || D2 ||D3
+#D2 = D2 || D3
+#D3 = D3
+
+#p53_Apoptosis = (D3 || (D2 && !robust)) || p53_Apoptosis
+#p53_Repair = ((D1 && (!D2 || !D3)) || ((D2 && robust) && !D3)) && !p53_Apoptosis
+
+#robust = robust
+
