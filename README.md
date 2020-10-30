@@ -1,7 +1,7 @@
 # Predicting-Neuroblastoma-Logic-Based-Model
 This repository contains a function to allow for the recreation of the model from the paper 
 "Predicting neuroblastoma using developmental signals and a logic-based model" 
-[Biophys Chem 238 (2018), 30-38]  If you use our computer code, please cite our paper.  For 
+(_Biophys Chem_ **238** (2018), 30-38)  If you use our computer code, please cite our paper.  For 
 more details about the paper, please visit https://doi.org/10.1016/j.bpc.2018.04.004
 
 Notes about the computer code
